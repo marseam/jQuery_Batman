@@ -1,0 +1,116 @@
+/*----- Batman  -----*/
+ #player    { position:absolute;
+background: url(images/batman.jpg) no-repeat;
+width: 109px;
+height: 154px;
+border: 1px solid red;}
+
+/*----- Board to display Batman and the Joker -----*/
+#board { position: relative; width: 500px; height: 500px; background-color: #888888; }       
+      .obstacle  { background-color: #ff0000; }
+      .breakable { display: inline-block; 
+					position: absolute;
+					background: url(images/joker.png)no-repeat;
+					width: 109px;
+					height: 154px; }
+      .overlap   { pointer-events: none; border: 1px solid black; margin: -1px; }
+
+/*----- Blocks in put the Villains into Jail Game -----*/
+.blocks {
+    display: inline-block;
+    width: 30px; }
+	
+/*----- Map where the Villains jail is -----*/
+.block {
+    width:50%;
+    height : 50%;
+    padding:10px;
+    border:1px solid #C8C8C8;
+    margin:0px;
+    background-color:#F0F0F0;
+	background-image: url('http://fc00.deviantart.net/fs70/i/2011/216/4/1/premade_bg_prison_0_1_by_e_dina-d4577xl.jpg');
+    margin-left: auto;
+    margin-right: auto;
+    position : relative;
+    overflow: hidden;}
+
+/*----- Blue class to change text colour -----*/
+.blue
+{
+	color:blue;
+	font-family: arial, Helvetica, sans-serif;
+	font-size: 80%;}
+   
+/*----- Content of Body -----*/
+body {
+		font: 80% arial, helvetica, sans-serif;
+		margin: 0;}
+		
+/*----- Header -----*/
+#header {
+			background: #036 url(images/batman5.png);
+			background-size:100% 100%;
+			position: fixed;
+			height: 200px;
+			top: 0;
+			width: 100%; }		
+
+h2 {
+	font-size: 1.5em;
+	color: #036; }
+		
+h3 {
+	font-size: 1.25em;
+	color: #036;}
+	
+/*----- Container -----*/
+#container{  
+			margin-top: 200px;}
+	
+/*----- Tabs layout -----*/
+.tabs {
+		width:100%;
+		display:inline-block;}
+ 
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+        display:block;
+        clear:both;
+        content:''; }
+ 
+.tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;}
+ 
+.tab-links a {
+            padding:9px 15px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background:#7FB5DA;
+            font-size:16px;
+            font-weight:600;
+            color:#4c4c4c;
+            transition:all linear 0.15s; }
+ 
+.tab-links a:hover {
+            background:#a7cce5;
+            text-decoration:none; }
+ 
+li.active a, li.active a:hover {
+        background:#fff;
+        color:#4c4c4c; }
+ 
+/*----- Content of Tabs -----*/
+.tab-content {
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff; }
+ 
+.tab {
+      display:none; }
+ 
+.tab.active {
+            display:block; }

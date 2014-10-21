@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!--Title-->
+<title>Batman Fan Site</title>
+ 
+ <!--Load Scripts and Styles-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="jquery-ui.min.css">
+<script src="jquery-ui.js"></script>
+<script src="jquery.flexslider.js"></script>
+<script src="script.js"></script> 
+<link rel="stylesheet" href="flexslider.css">
+<link rel="stylesheet" href="styles.css">
+<script src="jquery.ui.core.js"></script>
+<script src="jquery-collision.min.js"></script>
+	
+</head>
+ <!--Content Start-->
+<body>
+<div id="container"> 
+
+<!--HTML5 Heading of Website to add image-->
+<header id="header"></header>
+
+	<section id="content">
+		
+		<!--Heading of Website-->
+		<h1> A Batman Movie Fan Site </h1>
+		<div class="tabs">
+		<ul class="tab-links">
+			<li class="active"><a href="#tab1">Batman Begins</a></li>
+			<li><a href="#tab2"title= "The Dark Knight">The Dark Knight</a></li>
+			<li><a href="#tab3"title= "The Dark Knight Rises">The Dark Knight Rises</a></li>
+			<li><a href="#tab4"title= "Villians">Villains</a></li>
+			<li><a href="#tab5"title= "The Dark Knight Game">Game</a></li>
+		</ul>
+		
+		<!--First Tab-->
+		<div class="tab-content">
+			<div id="tab1" class="tab active">
+			<!--Buttons including tool tips-->
+				<button id="button1"title= "Toggle CSS class to blue">Toggle</button>
+				<button id="hide"title= "Hides the Content">Hide</button>
+				<button id="show"title= "Show the Hidden Content">Show</button>
+				<button id="fade"title="Fades the Image">Fade</button>  
+				<!--Content-->
+				<div><img id="batman" src="images/one.jpg" alt="" width="100" height="123"> </div>
+				<p>Batman Begins is a 2005 superhero film based on the fictional DC Comics character Batman, co-written and directed by Christopher Nolan. It stars Christian Bale as Batman along with Michael Caine, Liam Neeson, Katie Holmes, Gary Oldman, and Morgan Freeman.</p>
+				<p> The film reboots the Batman film series, telling the origin story of the character from Bruce Wayne's initial fear of bats, the death of his parents, his journey to become Batman, and his fight against Ra's al Ghul's plot to destroy Gotham City.</p>
+				<p> It draws inspiration from classic comic book story lines such as The Man Who Falls, Batman: Year One, and Batman: The Long Halloween. After a series of unsuccessful projects to resurrect Batman on screen following the 1997 critical failure of Batman & Robin, Nolan and David S. Goyer began to work on the film in early 2003 and aimed for a darker and more realistic tone, with humanity and realism being the basis of the film. The goal was to get the audience to care for both Batman and Bruce Wayne. The film, which was primarily shot in Iceland and Chicago, relied on traditional stunts and miniatures – computer-generated imagery was used minimally.</p>
+			</div>
+	
+			<!--Second Tab-->
+			<div id="tab2" class="tab">
+				<div> <h2> Click on the villains to put them in jail. Drag and resize them inside the jail cell.</h2> </div>
+				<br/>
+				<div class="block"></div>
+				<center>
+					<br/>
+					<!--Upload the Images of the Villains to the website-->
+					<div id="existingImges">
+						<br/>
+						<a class="block-add" href="javascript:void(0)"><img class="uploadImage" src="http://images5.fanpop.com/image/photos/31600000/Joker-the-joker-31637929-200-200.jpg" /></a>
+						<a class="block-add" href="javascript:void(0)"><img class="uploadImage" src="http://images5.fanpop.com/image/photos/31600000/Bane-bane-31640791-200-200.jpg" /></a>
+						<a class="block-add" href="javascript:void(0)"><img class="uploadImage" src="http://images1.fanpop.com/images/photos/2200000/Arnold-Schwarsengger-mr-freeze-2271734-200-136.jpg" /></a>
+					</div>
+				</center>
+			</div>
+  
+			<!--Third tab-->
+			<div id="tab3" class="tab">
+				<!--Flex Slider Start (display images in a slideshow - atm it takes a while to load images)-->
+				<div class="flexslider">
+					<ul class="slides">
+						<li><img src="images/one.jpg" /></li>
+						<li><img src="images/two.jpg" /></li>
+						<li><img src="images/three.jpg" /></li>
+					</ul>
+				<!--Flex Slider End-->
+				</div>
+			</div>
+ 
+			<!--Fourth tab-->
+			<div id="tab4" class="tab">
+			<!--Accordion Start (Drop down text information)-->
+				<div id="accordion">
+					<h3>Ra's al Ghul</h3>
+					<div>.Ra's al Ghul ("Ghoul's Head") is a fictional character, a supervillain who appears in comic books published by DC Comics. Besides being considered to be one of Batman's greatest enemies, Ra's al Ghul is the son of Sensei, the father of Talia al Ghul, Nyssa Raatko, and Dusan al Ghul, and the grandfather of Damian Wayne. His name in Arabic has been translated in the comics as "The Demon's Head".[4][5]</div>
+					<h3>Joker</h3>
+					<div>The Joker is a fictional character, a comic book supervillain appearing in DC Comics publications. The character was created by Jerry Robinson, Bill Finger and Bob Kane, and first appeared in Batman #1 (April 25, 1940). 
+						Credit for the character's creation is disputed; Kane and Robinson claimed responsibility for the Joker's design, while acknowledging Finger's writing contribution. Although the Joker was planned to be killed off during his 
+						initial appearance, he was spared by editorial intervention, allowing the character to endure as the archenemy of the superhero Batman.
+					</div>
+					<h3>Bane</h3>
+					<div>Bane is a super villain who appears in comic books published by DC Comics. The character's origin was in Batman: Vengeance of Bane #1 (January 1993), and was created by Chuck Dixon, Doug Moench, and Graham Nolan. Bane has been one of Batman's more physically and intellectually powerful foes. He is often credited for being the only villain to have "Broken The Bat". IGN's list of the Top 100 Comic Book Villains of All Time ranked Bane as #34.[1]Bane was portrayed by Robert Swenson in the 1997 film Batman & Robin, and by Tom Hardy as the main antagonist in the 2012 film The Dark Knight Rises.</div>
+				</div>
+			<!--Accordion End-->
+			</div>
+		
+			<!--Fifth Tab-->
+			<!-- Load the game to catch the Joker -->
+			<div id="tab5" class="tab">
+				<h1>Catch the Joker! Drag Batman to destroy the Joker!</h1>
+				<h2>You can also use the WASD keys to move Batman</h2>
+				<!--The Board Where Batman And Joker are displayed-->
+				<div id="board">
+					<div class="draggable ui-widget-content" style="left:240px; top: 20px;" id="player" ></div>
+					<div class="breakable" style="left:0px; top:200px;" id="break1" ></div>
+					<div class="breakable" style="left:120px; top:210px;" id="break2" ></div>
+					<div class="breakable" style="left:240px; top:220px;" id="break3" ></div>
+				</div>
+			</div>
+	</section>
+		
+	<!-- HTML5 Footer-->		
+	<footer>
+		<p>Created By Martin McGee</p>
+	</footer>
+	</div>
+</div>
+</div>
+</body>
+</html>
